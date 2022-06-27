@@ -1,23 +1,24 @@
 <template>
 
-<NavBar />
+<HeaderNav />
+
+<FooterSite />
 
 </template>
 
 
 <script>
-import NavBar from './components/NavBar.vue'
+import HeaderNav from './template/HeaderNav.vue'
+import FooterSite from './template/FooterSite.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
-  }
+    HeaderNav,
+    FooterSite
+}
 }
 </script>
 
 <style>
-#app {
-
-}
 </style>

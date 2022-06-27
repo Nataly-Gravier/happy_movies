@@ -1,5 +1,7 @@
 <template>
 
+    <h1>Happy Movies</h1>
+
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -43,3 +45,18 @@
     </nav>
 
 </template>
+
+<style>
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    height: 24vh;
+    color: white;
+    background-color: black;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+</style>
