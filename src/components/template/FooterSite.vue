@@ -16,6 +16,12 @@
 
 </template>
 
+<script>
+export default {
+    name: "FooterApp",
+}
+</script>
+
 <style>
 .footer {
     display: flex;

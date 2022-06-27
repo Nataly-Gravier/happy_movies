@@ -1,23 +1,40 @@
 <template>
+  <div id=" app">
+    <HeaderNav />
 
-<HeaderNav />
+    <div v-if="$route.path == '/'">
+      <!-- if the route is this one  / -->
 
-<FooterSite />
+      <h1 class="pt-5 font-weight-light">
+        Vos films préférés sont sur Happy Movies!
+      </h1>
 
+      <MoviesList :movies="movies" :loading="loading" :errored="errored" />
+    </div>
+
+    <div v-else>
+      <!-- if the route is not this one  / -->
+
+      <router-view v-bind:key="$route.fullPath"></router-view>
+    </div>
+
+    <FooterSite />
+  </div>
 </template>
 
 
 <script>
-import HeaderNav from './template/HeaderNav.vue'
-import FooterSite from './template/FooterSite.vue'
+
+import HeaderNav from "./components/template/HeaderNav.vue";
+import FooterSite from "./components/template/FooterSite.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HeaderNav,
-    FooterSite
-}
-}
+    FooterSite,
+  },
+};
 </script>
 
 <style>
