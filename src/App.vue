@@ -1,15 +1,17 @@
 <template>
+
   <div id=" app">
+
     <HeaderNav />
 
     <div v-if="$route.path == '/'">
       <!-- if the route is this one  / -->
 
-      <h1 class="pt-5 font-weight-light">
-        Vos films préférés sont sur Happy Movies!
-      </h1>
+      <h2 class="pt-5 font-weight-light"> Your favorite movies make us Happy! </h2>
 
-      <MovieList :movies="movies" :loading="loading" :errored="errored" />
+      <div class="movieshome">
+        <MovieList :movies="movies" :loading="loading" :errored="errored" />
+      </div>
 
     </div>
 
@@ -44,7 +46,9 @@ export default {
 
   data() {
     return {
-      movies: null
+      movies: null,
+      loading: true,
+      errored: false,
     }
   },
 
@@ -72,4 +76,38 @@ export default {
 </script>
 
 <style>
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  height: 24vh;
+  color: white;
+  background-color: black;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+h5 {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+  padding: 5%;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 5%;
+  background-color: black;
+}
+
+li{
+  height: 95vh;
+  margin-bottom: 10%;
+}
+
+img{
+  height: 60vh;
+}
 </style>

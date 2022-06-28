@@ -9,9 +9,9 @@
 
         <div class="card-body">
 
-            <p>{{ vote_average }}</p>
-            <p>{{ release_date }}</p>
-            <p>{{ overview }}</p>
+            <p><b> Score :</b> {{ vote_average }} </p>
+            <p><b> Release :</b> {{ release_date }} </p>  
+            <p ><b> Sinopse:</b> {{ overview.substring(0,160) + "... Read more ... "  }}</p>
 
         </div>
 
@@ -31,3 +31,11 @@ export default {
   },
   }
 </script>
+
+<style>
+
+card{
+  height: 60vh;
+}
+
+</style>

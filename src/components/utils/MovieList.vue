@@ -6,7 +6,9 @@
 <ul>
 
 <li class=" list_movies" v-for="movie in movies" v-bind:key="movie.id">
+
 <MovieCard
+
 :id="movie.id"
 :title="movie.title"
 :poster_path="movie.poster_path"
