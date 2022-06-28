@@ -31,6 +31,6 @@ export default {
     height: 24vh;
     color: white;
     background-color: black;
-    font-family: 'Rubik Moonrocks', cursive;
+    font-family: 'Stick No Bills', sans-serif;
 }
 </style>
