@@ -33,7 +33,7 @@ export default {
         MovieCard
     },
 
-    props:[ "movies"]
+    props:["movies"]
 }
 
 

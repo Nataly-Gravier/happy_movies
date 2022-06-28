@@ -1,12 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap";
 
 
 // creating the import 
-
 import AmericanMovies from './components/AmericanMovies.vue'
 import FrenchMovies from './components/FrenchMovies.vue'
 import LastMovies from './components/LastMovies.vue'
@@ -17,6 +16,7 @@ import TopRatedMovies from './components/TopRatedMovies.vue'
 // Define some routes
 // Each route should map to a component.
 const routes = [
+  { path: '/', component: App },
   { path: '/AmericanMovies', component: AmericanMovies },
   { path: '/FrenchMovies', component: FrenchMovies },
   { path: '/LastMovies', component: LastMovies },

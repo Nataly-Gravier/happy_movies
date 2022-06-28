@@ -1,6 +1,6 @@
 <template>
 
-<h1>American Movies</h1>
+    <h1>American Movies</h1>
 
 </template>
 
