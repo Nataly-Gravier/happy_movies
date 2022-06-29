@@ -24,11 +24,6 @@
 
                 </div>
 
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Search</button>
-                </form>
-
             </div>
 
         </div>
@@ -58,9 +53,7 @@ h1 {
 }
 
 nav{
-
-padding-left: 6%;
-
+    padding-left: 20%;
 }
 
 a{

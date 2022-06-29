@@ -53,12 +53,12 @@ export default {
   },
 
   created() {
-    axios.get("https://api.themoviedb.org/3/discover/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1")
+    axios.get("https://api.themoviedb.org/3/discover/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en&sort_by=popularity.desc&include_adult=false&include_video=true&page=1&vote_count.gte=1200&with_watch_monetization_types=flatrate")
       .then((firstAPIresponse) => {
         this.movies = firstAPIresponse.data.results;
         console.log(this.movies)
 
-        axios.get("https://api.themoviedb.org/3/discover/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=2")
+        axios.get("https://api.themoviedb.org/3/discover/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en&sort_by=popularity.desc&include_adult=false&include_video=true&page=2&vote_count.gte=1200&with_original_language=en&with_watch_monetization_types=flatrate")
           .then((secondAPIresponse) => {
 
             secondAPIresponse.data.results.forEach(movie => {
@@ -103,11 +103,11 @@ ul {
 }
 
 li{
-  height: 95vh;
+  height: 90%;
   margin-bottom: 10%;
 }
 
 img{
-  height: 60vh;
+  height: 50vh;
 }
 </style>

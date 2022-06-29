@@ -1,7 +1,7 @@
 
 <template>
 
-<h1>Search Movies </h1>
+<h2>Search Movies </h2>
 
 
 </template>

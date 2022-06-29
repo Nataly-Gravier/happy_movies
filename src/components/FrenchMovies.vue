@@ -2,11 +2,11 @@
 
   <div class="FrenchMovies">
 
-    <h1>French Movies</h1>
+    <h2>French Movies</h2>
 
     <SortButtons :movies="movies" @sort-movies="sortMovies"></SortButtons>
 
-    <MovieList :movies="movies" :loading="loading" :errored="errored" />
+     <MovieList :movies="movies" :loading="loading" :errored="errored"></MovieList>
 
   </div>
 
@@ -35,12 +35,12 @@ export default {
   },
 
   created() {
-    axios.get("https://api.themoviedb.org/3/discover/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en-US&region=France&sort_by=popularity.desc&include_adult=false&include_video=false&page=1")
+    axios.get("https://api.themoviedb.org/3/discover/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en&sort_by=popularity.desc&include_adult=false&include_video=true&page=1&vote_count.gte=1000&with_original_language=fr")
       .then((firstAPIresponse) => {
         this.movies = firstAPIresponse.data.results;
         console.log(this.movies)
 
-        axios.get("https://api.themoviedb.org/3/discover/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en-US&region=France&sort_by=popularity.desc&include_adult=false&include_video=false&page=2")
+        axios.get("https://api.themoviedb.org/3/discover/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en&sort_by=popularity.desc&include_adult=false&include_video=true&page=2&vote_count.gte=1000&with_original_language=fr")
           .then((secondAPIresponse) => {
 
             secondAPIresponse.data.results.forEach(movie => {

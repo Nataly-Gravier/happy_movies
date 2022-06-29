@@ -2,10 +2,10 @@
 
     <div class="footer container-fluid">
         <div class="card-header">
-            I am a footer <footer>
+            Your favorite movies make us Happy! <footer>
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>I am a copy rigth text</p>
+                        <p>© All the rights reserved</p>
                         <footer class="blockquote-footer">Happy Movies <cite title="Source Title">2022</cite></footer>
                     </blockquote>
                 </div>

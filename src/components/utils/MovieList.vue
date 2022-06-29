@@ -1,27 +1,19 @@
 
 <template>
 
-<div >
+    <div>
 
-<ul>
+        <ul>
 
-<li class=" list_movies" v-for="movie in movies" v-bind:key="movie.id">
+            <li class=" list_movies" v-for="movie in movies" v-bind:key="movie.id">
 
-<MovieCard
+                <MovieCard :id="movie.id" :title="movie.title" :poster_path="movie.poster_path"
+                    :release_date="movie.release_date" :vote_average="movie.vote_average" :overview="movie.overview" />
+            </li>
 
-:id="movie.id"
-:title="movie.title"
-:poster_path="movie.poster_path"
-:release_date = "movie.release_date"
-:vote_average = "movie.vote_average"
-:overview = "movie.overview"
+        </ul>
 
-/>
-</li>
-
-</ul>
-
-</div>
+    </div>
 
 </template>
 
@@ -35,7 +27,7 @@ export default {
         MovieCard
     },
 
-    props:["movies"]
+    props: ["movies"]
 }
 
 
