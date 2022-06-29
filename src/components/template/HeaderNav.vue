@@ -53,7 +53,7 @@ h1 {
 }
 
 nav{
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 a{
