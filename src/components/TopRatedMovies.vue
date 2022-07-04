@@ -4,7 +4,7 @@
 
     <h2>Top Rated Movies </h2>
 
-    <SortButtons :movies="movies" @sort-movies="sortMovies"></SortButtons>
+    <SortButtons :movies="movies"></SortButtons>
 
     <MovieList :movies="movies" :loading="loading" :errored="errored" />
 

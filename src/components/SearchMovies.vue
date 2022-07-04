@@ -65,6 +65,5 @@ input {
 p{ text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 2rem;
-
 }
 </style>

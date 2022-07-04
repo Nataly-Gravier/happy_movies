@@ -76,6 +76,10 @@ export default {
 </script>
 
 <style>
+
+body {font-family: 'Fredoka One', cursive;
+}
+
 h2 {
   display: flex;
   justify-content: center;
@@ -84,11 +88,9 @@ h2 {
   height: 24vh;
   color: white;
   background-color: black;
-  font-family: 'Gloria Hallelujah', cursive;
 }
 
 h5 {
-  font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
   padding: 5%;
 }
