@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="sortbuttons">
 
         <button id="Alphabetical" @click="sortByTitle" type="button" class="btn btn-outline-secondary"> For Order
             Alphabetical</button>
@@ -75,7 +75,7 @@ export default {
                     return 0;
                 })
 
-            return this.inversedate = false
+                return this.inversedate = false
             }
 
             if (this.inversedate == false) {
@@ -99,28 +99,28 @@ export default {
             if (this.inversetitle == true) {
 
                 movielist.sort((movie1, movie2) => {
-                if (movie1.title < movie2.title) {
-                    return -1;
-                }
-                if (movie1.title > movie2.title) {
-                    return 1;
-                }
-                return 0;
+                    if (movie1.title < movie2.title) {
+                        return -1;
+                    }
+                    if (movie1.title > movie2.title) {
+                        return 1;
+                    }
+                    return 0;
                 })
 
-            return this.inversetitle = false
+                return this.inversetitle = false
             }
 
             if (this.inversetitle == false) {
 
                 movielist.sort((movie1, movie2) => {
-                if (movie1.title > movie2.title) {
-                    return -1;
-                }
-                if (movie1.title < movie2.title) {
-                    return 1;
-                }
-                return 0;
+                    if (movie1.title > movie2.title) {
+                        return -1;
+                    }
+                    if (movie1.title < movie2.title) {
+                        return 1;
+                    }
+                    return 0;
                 })
                 return this.inversetitle = true
             }
@@ -133,13 +133,30 @@ export default {
 </script>
 
 <style scoped>
+.sortbuttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
 .btn {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Fredoka One', cursive;
     background-color: black;
     color: #fff;
     font-size: 1.5rem;
-    margin: 2% 7% 2% 10%;
-    height: 5rem;
-    width: 12rem;
+    height: 6rem;
+    width: 16rem;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .sortbuttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
 }
 </style>

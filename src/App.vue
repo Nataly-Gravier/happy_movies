@@ -1,6 +1,6 @@
 <template>
 
-  <div id=" app">
+  <div id="app">
 
     <HeaderNav />
 
@@ -77,7 +77,14 @@ export default {
 
 <style>
 
-body {font-family: 'Fredoka One', cursive;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: 'Fredoka One', cursive;
 }
 
 h2 {
@@ -85,31 +92,17 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 4rem;
-  height: 24vh;
+  height: 14rem;
   color: white;
   background-color: black;
 }
 
-h5 {
-  text-align: center;
-  padding: 5%;
-}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.3rem;
+    text-align: center;
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-  padding: 5%;
-  background-color: black;
-}
+  }
 
-li{
-  height: 90%;
-  margin-bottom: 10%;
-}
-
-img{
-  height: 50vh;
 }
 </style>

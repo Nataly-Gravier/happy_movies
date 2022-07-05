@@ -45,8 +45,7 @@ export default {
         },
 
         getSearch(search) {
-            axios
-                .get("https://api.themoviedb.org/3/search/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en-US&include_adult=false&query=" + search)
+            axios.get("https://api.themoviedb.org/3/search/movie?api_key=3ea8988340d4ed715d28b9978346c29e&language=en-US&include_adult=false&query=" + search)
                 .then((responsefive) => {
                     this.movies = responsefive.data.results;
                 });

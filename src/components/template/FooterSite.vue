@@ -5,8 +5,8 @@
             Your favorite movies make us Happy! <footer>
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p>© All the rights reserved</p>
-                        <footer class="blockquote-footer">Happy Movies <cite title="Source Title">2022</cite></footer>
+                        <h3>© All the rights reserved</h3>
+                        <h3>Happy Movies 2022</h3>
                     </blockquote>
                 </div>
             </footer>
@@ -32,5 +32,14 @@ export default {
     color: white;
     background-color: black;
     font-family: 'Stick No Bills', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+
+  }
+
 }
 </style>

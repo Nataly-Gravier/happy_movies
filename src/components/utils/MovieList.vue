@@ -5,8 +5,7 @@
 
         <ul>
 
-            <li class=" list_movies" v-for="movie in movies" v-bind:key="movie.id">
-
+            <li class= "list-unstyled" v-for="movie in movies" v-bind:key="movie.id">
                 <MovieCard :id="movie.id" :title="movie.title" :poster_path="movie.poster_path"
                     :release_date="movie.release_date" :vote_average="movie.vote_average" :overview="movie.overview" />
             </li>
@@ -33,4 +32,12 @@ export default {
 
 </script>
 
+<style>
 
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+</style>

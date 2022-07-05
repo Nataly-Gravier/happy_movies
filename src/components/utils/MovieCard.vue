@@ -1,24 +1,21 @@
-
 <template>
-
-  <router-link :to="`/MovieDetails/${id}`">
-
-
-    <div class="card text-bg-ligth mb-3" style="max-width: 20rem;">
-      <div class="card-header"> <img v-bind:src="preUrl + poster_path" alt="moviePoster" /></div>
-      <div class="card-body">
-        <h5 class="card-title"> {{ title }}</h5>
-        <p><b> Score :</b> {{ vote_average }} </p>
-        <p><b> Release :</b> {{ release_date }} </p>
-        <p><b> Sinopse:</b> {{ overview.substring(0, 160) + "... Read more ... " }}</p>
-      </div>
+    <div class="container">
+        <router-link :to="`/MovieDetails/${id}`">
+            <div class ="card p-1 my-3 ">
+                <h5 class ="title fs-4 text-center text-white text-uppercase">{{ title }}</h5>
+                <img v-bind:src="preUrl + poster_path" alt="moviePoster" />
+                <div class="card-body">
+                    <p class="sorti text-white fs-5 text"><b>Sortie :</b> {{ release_date }}</p>
+                    <p class="notemoy text-white fs-5 text"><b>Note moyenne :</b> {{ vote_average }}</p>
+                    <p class="resum text-white fs-5 text"><b>Résumé :</b> {{ overview.substring(0, 200) + "..." }}</p>
+                </div>
+            </div>
+        </router-link>
     </div>
-
-  </router-link>
-
 </template>
 
 <script>
+
 export default {
   name: "MovieCard",
   props: ["id", "title", "vote_average", "release_date", "overview", "poster_path"],
@@ -29,16 +26,20 @@ export default {
     };
   },
 }
+
 </script>
 
-<style scoped>
-a {
-  text-decoration: none;
-  color: white;
+<style>
+
+ a{
+    text-decoration: none;
 }
 
 .card {
-  height: 90vh;
+    border: 1px solid #000;
+    background-color: #000;
+    text-align: left;
+    width: 30rem;
 }
 
 
