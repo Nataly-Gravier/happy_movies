@@ -38,6 +38,8 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 0;
+    margin: 5%;
 }
 
 </style>

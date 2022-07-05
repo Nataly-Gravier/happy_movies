@@ -9,8 +9,9 @@
 
         <div class="row">
 
-            <div class="col-6 col-lg-6 col-sm-6 text-center " > <img v-bind:src="preUrl + movie.poster_path" alt="moviePoster" /></div>
-            <div class="col-6 col-lg-6 mt-4 col-sm-6 text-center ">
+            <div class="col-lg-6 col-md-12 col-sm-12 m-auto text-center  " > <img v-bind:src="preUrl + movie.poster_path" alt="moviePoster" /></div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 m-auto text-center">
 
                 <div class="mt-5" id="trailer" v-if="video[0]">
                     <iframe width="650" height="300" v-bind:src="'https://www.youtube.com/embed/' + video[0].key"
@@ -30,9 +31,6 @@
                     <p><b> Sinopse:</b> {{ movie.overview }}</p>
 
                 </div>
-
-
-
 
             </div>
 
@@ -79,6 +77,7 @@ export default {
 </script>
 
 <style scoped>
+
 .row{
 display: flex;
 justify-content: center;
@@ -96,6 +95,24 @@ h5 {
 .texto{
 width:40%;
 margin-top: 5%;
+margin-bottom: 5%;
+}
+
+.texto{
+margin-left: 30%;
+}
+
+@media screen and (max-width: 768px) {
+ 
+iframe{
+height: 20vh;
+width: 60vw;
+}
+
+img {
+    height: 60vh;
+}
+
 }
 </style>
 

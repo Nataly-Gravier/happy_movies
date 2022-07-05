@@ -3,7 +3,7 @@
 
     <div class="searchmovies">
 
-        <h2>Search Movies</h2>
+        <h2>Search For Your Movies</h2>
 
         <div class="container-fluid">
             <p>Use me to find your move</p>
@@ -55,14 +55,21 @@ export default {
 </script>
 
 <style scoped>
-input {
-   margin-bottom: 5%;
-    margin-left: 31%;
-    padding-left: 25%;
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    height: 3rem;
+    width: 20rem;
+    border-radius: 20px;
 }
 
 p{ text-align: center;
-  font-family: 'Gloria Hallelujah', cursive;
   font-size: 2rem;
 }
 </style>

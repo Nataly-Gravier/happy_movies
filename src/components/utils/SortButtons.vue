@@ -1,11 +1,11 @@
 <template>
     <div class="sortbuttons">
 
-        <button id="Alphabetical" @click="sortByTitle" type="button" class="btn btn-outline-secondary"> For Order
+        <button id="Alphabetical" @click="sortByTitle" type="button" class="btn btn-outline-dark"> For Order
             Alphabetical</button>
-        <button id="Release" @click="sortByDate" type="button" class="btn btn-outline-secondary">For Release
+        <button id="Release" @click="sortByDate" type="button" class="btn btn-outline-dark">For Release
             Date</button>
-        <button id="Score" @click="sortByRating" type="button" class="btn btn-outline-secondary">For Score</button>
+        <button id="Score" @click="sortByRating" type="button" class="btn btn-outline-dark">For Score</button>
 
     </div>
 </template>
@@ -142,12 +142,11 @@ export default {
 
 .btn {
     font-family: 'Fredoka One', cursive;
-    background-color: black;
-    color: #fff;
     font-size: 1.5rem;
     height: 6rem;
     width: 16rem;
     border-radius: 25px;
+    border: solid black 0.3rem;
 }
 
 @media screen and (max-width: 768px) {
