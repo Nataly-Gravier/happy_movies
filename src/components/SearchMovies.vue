@@ -72,4 +72,10 @@ input{
 p{ text-align: center;
   font-size: 2rem;
 }
+
+.searchmovies{
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
 </style>

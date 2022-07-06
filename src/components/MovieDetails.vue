@@ -96,10 +96,15 @@ h5 {
 width:40%;
 margin-top: 5%;
 margin-bottom: 5%;
+margin-left: 30%;
 }
 
-.texto{
-margin-left: 30%;
+.container-fluid{
+margin-bottom: 5%;
+}
+
+p{
+font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {

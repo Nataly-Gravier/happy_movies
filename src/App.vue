@@ -98,8 +98,22 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+  
   h2 {
     font-size: 2.3rem;
+    text-align: center;
+
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+body{
+  margin-top: 5%;
+}
+
+  h2 {
+    font-size: 3;
     text-align: center;
 
   }

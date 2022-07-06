@@ -35,11 +35,16 @@ export default {
     text-decoration: none;
 }
 
+img{
+    height: 60vh;
+}
+
 .card {
     border: 1px solid #000;
     background-color: #000;
     text-align: left;
     width: 30rem;
+    height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
